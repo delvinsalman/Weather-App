@@ -5,5 +5,6 @@ This innovative weather app delivers real-time updates on the weather conditions
 
 ## Features
 
+### Weather Details 
 <img width="589" alt="Screenshot 2024-12-03 at 4 51 12 PM" src="https://github.com/user-attachments/assets/84f3aaf2-9b3f-40c1-b5b1-ad898678e67d">
 
