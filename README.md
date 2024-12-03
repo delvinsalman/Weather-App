@@ -24,6 +24,8 @@ This innovative weather app delivers real-time updates on the weather conditions
 
 <img width="1508" alt="Screenshot 2024-12-03 at 4 56 09 PM" src="https://github.com/user-attachments/assets/e0469038-901e-44fb-975b-4fed50ac1663">
 
+<img width="1508" alt="Screenshot 2024-12-03 at 5 00 27 PM" src="https://github.com/user-attachments/assets/469dafaf-d581-449d-95b0-3f3894fbda74">
+
 ## Installation & Deploying 
 
 The application can be downloaded as a ZIP folder from GitHub and showcased on your local HTML browser. It does not require a Python script or any live server, so users can simply run it directly through their online browsers.
