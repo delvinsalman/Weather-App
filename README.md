@@ -11,3 +11,11 @@ This innovative weather app delivers real-time updates on the weather conditions
 ### 3 & 7 Day Forecasts
 
 <img width="593" alt="Screenshot 2024-12-03 at 4 52 38 PM" src="https://github.com/user-attachments/assets/0701a1cb-575e-4890-b526-99ea6466ca53">
+
+## Overview
+
+<img width="1508" alt="Screenshot 2024-12-03 at 4 53 57 PM" src="https://github.com/user-attachments/assets/98af54d9-71b0-4e8f-aff9-bc0af7709cf0">
+
+<img width="1508" alt="Screenshot 2024-12-03 at 4 54 06 PM" src="https://github.com/user-attachments/assets/e14e62ec-0c11-4ba2-bce3-ba4468e8d9f1">
+
+<img width="1508" alt="Screenshot 2024-12-03 at 4 54 25 PM" src="https://github.com/user-attachments/assets/a6435860-2d3a-47c1-b5ac-d92bdfb31606">
