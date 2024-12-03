@@ -18,8 +18,7 @@ This innovative weather app delivers real-time updates on the weather conditions
 
 <img width="1508" alt="Screenshot 2024-12-03 at 4 56 59 PM" src="https://github.com/user-attachments/assets/fe9d97bb-5f2f-4ff2-82d4-590e864db8c3">
 
-
-<img width="1508" alt="Screenshot 2024-12-03 at 4 54 25 PM" src="https://github.com/user-attachments/assets/a6435860-2d3a-47c1-b5ac-d92bdfb31606">
+<img width="1508" alt="Screenshot 2024-12-03 at 4 57 46 PM" src="https://github.com/user-attachments/assets/f9dff38b-1840-473a-8e18-aa1409208156">
 
 <img width="1508" alt="Screenshot 2024-12-03 at 4 55 41 PM" src="https://github.com/user-attachments/assets/a6889178-204b-4a90-85ce-50f76e5c9be6">
 
