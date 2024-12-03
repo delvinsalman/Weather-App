@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Weather App</title>
+    <link rel="stylesheet" href="style.css"> <!-- This links your CSS file -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <!-- Favicon -->
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/9098/9098495.png" type="image/x-icon"> <!-- Replace 'favicon.ico' with your actual favicon file -->
+</head>
+<body>
+    <div class="weather-app">
+        <div class="container">
+            <h3 class="brand">
+                Weather Search Application
+                <i id="weather-icon" class="fas fa-cloud-sun icon-right"></i>
+                <button id="toggle-panel" class="toggle-button">
+                    <i class="fas fa-hand-pointer"></i>
+                </button>
+            </h3>
+            
+            <p class="small-text"><em>Powered By, Weatherapi.com.</em></p>
+            
+            <div>
+                <h1 class="temp">16&#176;</h1>
+                <div class="city-time">
+                    <h1 class="name">Toronto</h1> <!-- Default city set to Toronto -->
+                    <small>
+                        <span class="time">06:09</span>
+                        <span class="date">Monday Sep 19</span>
+                    </small>
+                </div>
+                <div class="weather">
+                    <img src="./icons/day/113.png" class="icon" alt="icon" width="50" height="50"/>
+                    <span class="condition">Cloudy</span>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <form id="locationInput">
+                <input type="text" class="search" placeholder="Search Location..."/>
+                <button type="submit" class="submit">
+                    <i class="fas fa-search"></i> <!-- Magnifying glass icon -->
+                </button>
+            </form>
+            <ul class="cities">
+                <li class="city">Berlin</li>  
+                <li class="city">Riyadh</li> 
+                <li class="city">Kópavogur</li> 
+                <li class="city">Helsinki</li>  
+                <li class="city">Lisbon</li>  
+            </ul>
+            
+            <!-- Second list of cities -->
+            <ul class="cities">
+                <li class="city">Athens</li>  
+                <li class="city">Yakutsk</li> 
+                <li class="city">Erie</li>  
+                <li class="city">Mexicali</li>  
+                <li class="city">Sydney</li>  
+            </ul>
+            
+            <!-- Third list of cities -->
+            <ul class="cities">
+                <li class="city">Moscow</li>  
+                <li class="city">Cardiff</li> 
+                <li class="city">Lima</li>  
+                <li class="city">Dubai</li>  
+                <li class="city">Astana</li>  
+            </ul>
+            <ul class="details">
+                <h2>Weather Details</h2>
+                <li><span>Cloudy</span><span class="cloud">89%</span></li>
+                <li><span>Humidity</span><span class="humidity">64%</span></li>
+                <li><span>Wind</span><span class="wind">8km/h</span></li>
+                <li><span>Pressure</span><span class="pressure">1012 mb</span></li>
+                <li><span>Visibility</span><span class="visibility">10 km</span></li>
+                <li><span>UV Index</span><span class="uv">5</span></li>
+                <li><span>Dew Point</span><span class="dew">12&#176;C</span></li>
+                <li><span>Feels Like</span><span class="feels-like">18&#176;C</span></li>
+            </ul>
+            
+            <div class="forecast">
+                <h4>3-Day Forecast</h4>
+                <ul class="three-day"></ul>
+                <h4>7-Day Forecast</h4>
+                <ul class="seven-day"></ul>
+            </div>
+            <!-- Map Section -->
+            <div id="map" style="height: 400px;"></div> <!-- Add the map div -->
+        </div>
+    </div>
+    
+    <!-- Loading GIF -->
+    <div class="loading">
+        <img src="https://i.gifer.com/ZZ5H.gif" alt="Loading..." />
+    </div>
+
+    <script src="main.js"></script>
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <script>
+        // Array of weather icons to cycle through
+        const icons = [
+            "fas fa-cloud-sun",        // Partly cloudy with sun
+            "fas fa-sun",             // Sun
+            "fas fa-cloud",           // Cloud
+            "fas fa-cloud-rain",      // Rain (corrected icon)
+            "fas fa-snowflake",       // Snowflake
+            "fas fa-cloud-showers-heavy" // Heavy cloud with showers
+        ];
+    
+        let currentIconIndex = 0;  // Start from the first icon
+    
+        // Function to change the icon every 5 seconds
+        setInterval(() => {
+            currentIconIndex = (currentIconIndex + 1) % icons.length;  // Cycle through the icons array
+            document.getElementById('weather-icon').className = `fas ${icons[currentIconIndex]}`;
+        }, 5000);  // Change every 5000ms (5 seconds)
+    </script>
+    
+</body>
+</html>
