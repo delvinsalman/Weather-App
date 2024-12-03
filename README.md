@@ -29,3 +29,6 @@ This innovative weather app delivers real-time updates on the weather conditions
 ## Installation & Deploying 
 
 The application can be downloaded as a ZIP folder from GitHub and showcased on your local HTML browser. It does not require a Python script or any live server, so users can simply run it directly through their online browsers.
+
+## Live View
+You can view the appliction and try it for yourself live, https://delvinsalman.github.io/Weather-App/.
