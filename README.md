@@ -8,3 +8,6 @@ This innovative weather app delivers real-time updates on the weather conditions
 ### Weather Details 
 <img width="589" alt="Screenshot 2024-12-03 at 4 51 12 PM" src="https://github.com/user-attachments/assets/84f3aaf2-9b3f-40c1-b5b1-ad898678e67d">
 
+### 3 & 7 Day Forecasts
+
+<img width="593" alt="Screenshot 2024-12-03 at 4 52 38 PM" src="https://github.com/user-attachments/assets/0701a1cb-575e-4890-b526-99ea6466ca53">
