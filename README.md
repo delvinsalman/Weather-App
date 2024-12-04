@@ -3,6 +3,10 @@
 ## Summary
 This innovative weather app delivers real-time updates on the weather conditions of any city. Created using JavaScript, it integrates the concept of using a live API to fetch its content based on the user's selected location. The program was designed using HTML and CSS for the user interface and follows a system-based design that leverages programming, APIs, and data integration. This application can search for cities around the world and provide live updates, including current weather conditions, humidity levels, cloud cover, how the weather feels, and much more. It also offers a 3-day and 7-day weather forecast for each city, along with a live map to view the city’s weather. The app features a sleek, user-friendly interface that enhances user interaction. 
 
+The system dynamically reacts to images based on the current weather conditions. For example, if it's snowing at night, it will display a snowy night scene. Similarly, a cloudy day will show an image reflecting those conditions. Icons on the interface visually represent specific weather states, such as clear skies, sunshine, rain, fog, mist, or any other forecasted conditions for a particular area.
+
+Additionally, the application includes a touch or gesture feature to minimize the weather UI, transforming it into a screensaver. This screensaver displays a scenic view of the selected city along with the current temperature for a simplified and visually appealing experience.
+
 ### The Mobile version also works for this application on landscape mode. 
 ![IMG_5082](https://github.com/user-attachments/assets/f653271d-2964-4879-bb43-e26de7e52384)
 
