@@ -146,21 +146,19 @@ h1, h3 {
 }
 
 .panel ul h4 {
-    margin: -0em 0;
- 
-    
+    margin: 0;
 }
+
 .panel ul h2 {
-    margin: -0em 0;
- margin-top: -1.5em;
- 
-    
+    margin: 0;
+    margin-top: -1.5em;
 }
+
 .panel ul h3 {
     margin: 1.5em 0;
     margin-top: 2em;
-    
 }
+
 .city {
     display: block;
     cursor: pointer;
@@ -196,7 +194,6 @@ h1, h3 {
     }
 }
 
-/* Loading GIF Styling */
 .loading {
     position: fixed;
     top: 50%;
@@ -210,6 +207,7 @@ h1, h3 {
     width: 50px;
     height: 50px;
 }
+
 .forecast {
     margin-top: 2em;
     color: #fff;
@@ -232,19 +230,19 @@ h1, h3 {
     justify-content: space-between;
     align-items: center;
     margin: 1em 0;
-    gap: 1em; /* Add some spacing between elements */
+    gap: 1em;
 }
 
 .forecast ul li span {
     font-size: 0.9em;
     color: #ccc;
-    flex: 1; /* Allow text to occupy space */
+    flex: 1;
 }
 
 .forecast ul li img {
     width: 40px;
     height: 40px;
-    margin-left: auto; /* Push the image to the right */
+    margin-left: auto;
 }
 
 .forecast ul li .condition {
@@ -252,6 +250,7 @@ h1, h3 {
     color: #fff;
     margin-left: 1em;
 }
+
 #map {
     width: 100%;
     height: 400px;
@@ -260,57 +259,55 @@ h1, h3 {
 
 .panel ul.cities {
     display: flex;
-    justify-content: space-around; /* Space out the lists more evenly */
+    justify-content: space-around;
     padding: 1em 0;
-    margin: 3em 0; /* Adjust the margin to space them out more from the top */
+    margin: 3em 0;
 }
 
 .panel ul.cities li {
     color: #ccc;
     margin: 0.5em 0;
-    width: 30%; /* Adjust the width to make them appear side by side */
-    text-align: center; /* Center the city names inside the list items */
+    width: 30%;
+    text-align: center;
 }
 
 .panel ul.cities li:hover {
     color: #fff;
 }
 
-/* Move the first set of cities further down */
 .panel ul.cities:first-of-type {
-    margin-top: 5em; /* Add more space before the first set */
+    margin-top: 5em;
 }
+
 .small-text {
     font-size: 0.8em;
     color: #ffffff;
     text-align: center;
     margin-top: -490px;
     margin-left: 36px;
-
 }
+
 .toggle-button {
-    background: none; /* No background */
-    color: #ffffff; /* Icon color */
-    border: none; /* No border */
-    padding: 0; /* Remove padding */
-    margin-left: 0.2em; /* Maintain spacing */
+    background: none;
+    color: #ffffff;
+    border: none;
+    padding: 0;
+    margin-left: 0.2em;
     cursor: pointer;
-    font-size: 1.2em; /* Icon size */
+    font-size: 1.2em;
     transition: color 0.3s ease-in-out;
-    position: relative; /* Allows fine adjustments */
-    top: 1.9px; /* Moves the icon down slightly */
+    position: relative;
+    top: 1.9px;
 }
 
 .toggle-button:hover {
-    color: #ccc; /* Change icon color on hover */
+    color: #ccc;
 }
 
-
-
 .weather-app.full-view .panel {
-    display: none; /* Hide the side panel */
+    display: none;
 }
 
 .weather-app.full-view .container {
-    width: 100%; /* Make the container take the full width */
+    width: 100%;
 }
