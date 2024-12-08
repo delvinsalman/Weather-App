@@ -138,9 +138,3 @@ Want to contribute?
 
 > **Issue**: The city is not found.  
 > **Solution**: Check for spelling errors or try searching for larger metropolitan areas.  
-
----
-
-## 📞 **Contact**  
-For questions or feedback, please contact:  
-📧 **your-email@example.com**  
