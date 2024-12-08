@@ -122,16 +122,6 @@ Here are some ideas for improving the app in the future:
 
 ---
 
-## 🙌 **Contributing**  
-Want to contribute?  
-1. Fork the repository on GitHub.  
-2. Create a new branch (`feature/new-feature-name`).  
-3. Make your changes and commit them (`git commit -m "Added new feature"`).  
-4. Push to the branch (`git push origin feature/new-feature-name`).  
-5. Open a pull request and describe the changes.  
-
----
-
 ## 🛠️ **Troubleshooting**  
 > **Issue**: The app is not updating the weather.  
 > **Solution**: Ensure you have a stable internet connection. Since it relies on live API calls, the app requires an active connection.  
