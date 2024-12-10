@@ -108,13 +108,12 @@ function updateBackground(code, isDay) {
     sound.play();
 }
 
-
-
 function fetchWeatherData() {
     const apiKey = "04d32ba2d21a4958a33183322241012";
     const currentUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${cityInput}`;
     const forecastUrl = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${cityInput}&days=7`;
 
+    // Fetch current weather
     fetch(currentUrl)
         .then(response => {
             if (!response.ok) {
@@ -123,42 +122,28 @@ function fetchWeatherData() {
             return response.json();
         })
         .then(data => {
+            const date = new Date(data.location.localtime); // Convert to Date object
+            const dayOfWeek = dayOfTheWeek(date.getDate(), date.getMonth() + 1, date.getFullYear());
+            const formattedDate = `${dayOfWeek}, ${date.getDate()} ${date.toLocaleString('default', { month: 'long' })} ${date.getFullYear()}`;
             
             temp.innerHTML = data.current.temp_c + "&#176;";
             conditionOutput.innerHTML = data.current.condition.text;
             nameOutput.innerHTML = data.location.name;
-
-           
-            const date = data.location.localtime;
-            const y = parseInt(date.substr(0, 4));
-            const m = parseInt(date.substr(5, 2));
-            const d = parseInt(date.substr(8, 2));
-            const time = date.substr(11);
-
-          
-            const country = data.location.country;
-            dateOutput.innerHTML = `${dayOfTheWeek(d, m, y)} ${d}, ${m} ${y}`;
-            timeOutput.innerHTML = `${time} | ${country}`; 
-
+            dateOutput.innerHTML = formattedDate;
+            const timeOptions = { hour: '2-digit', minute: '2-digit', hour12: true };
+            timeOutput.innerHTML = `${date.toLocaleTimeString('en-US', timeOptions)} | ${data.location.country}`;
             
             icon.src = `https:${data.current.condition.icon}`;
-
-            
             cloudOutput.innerHTML = data.current.cloud + "%";
             humidityOutput.innerHTML = data.current.humidity + "%";
             windOutput.innerHTML = data.current.wind_kph + " km/h";
-
-           
             document.querySelector('.pressure').innerHTML = data.current.pressure_mb + " mb";
             document.querySelector('.visibility').innerHTML = data.current.vis_km + " km";
             document.querySelector('.uv').innerHTML = data.current.uv;
             document.querySelector('.dew').innerHTML = data.current.dewpoint_c + "&#176;C";
             document.querySelector('.feels-like').innerHTML = data.current.feelslike_c + "&#176;C";
 
-           
             updateBackground(data.current.condition.code, data.current.is_day);
-
-            
             updateMap(data.location.lat, data.location.lon);
 
             app.style.opacity = "1";
@@ -169,6 +154,7 @@ function fetchWeatherData() {
             loading.style.display = "none"; 
         });
 
+    // Fetch forecast weather
     fetch(forecastUrl)
         .then(response => {
             if (!response.ok) {
@@ -177,127 +163,48 @@ function fetchWeatherData() {
             return response.json();
         })
         .then(data => {
-            
             const currentDate = new Date();
-            
-           
             const upcomingForecast = data.forecast.forecastday.filter(day => {
                 const forecastDate = new Date(day.date);
                 return forecastDate > currentDate;
             });
 
-            
             const allDays = [...upcomingForecast]; 
             let additionalDaysNeeded = 7 - upcomingForecast.length;
 
-            
             if (additionalDaysNeeded > 0) {
                 const remainingDays = data.forecast.forecastday.slice(0, additionalDaysNeeded);
                 allDays.push(...remainingDays);
             }
 
-            
+            // Update the 3-day and 7-day forecasts
             updateForecast(allDays.slice(0, 3), threeDayForecast); 
             updateForecast(allDays, sevenDayForecast); 
         })
         .catch(() => {
-            
-        });
-
-
-    fetch(forecastUrl)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error("Forecast not found");
-            }
-            return response.json();
-        })
-        .then(data => {
-            
-            const currentDate = new Date();
-            
-            
-            const upcomingForecast = data.forecast.forecastday.filter(day => {
-                const forecastDate = new Date(day.date);
-                return forecastDate > currentDate;
-            });
-
-            
-            const allDays = [...upcomingForecast]; 
-            let additionalDaysNeeded = 7 - upcomingForecast.length;
-
-            
-            if (additionalDaysNeeded > 0) {
-                const remainingDays = data.forecast.forecastday.slice(0, additionalDaysNeeded);
-                allDays.push(...remainingDays);
-            }
-
-            
-            updateForecast(allDays.slice(0, 3), threeDayForecast); 
-            updateForecast(allDays, sevenDayForecast); 
-        })
-        .catch(() => {
-           
-        });
-
-
-    fetch(forecastUrl)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error("Forecast not found");
-            }
-            return response.json();
-        })
-        .then(data => {
-            
-            const currentDate = new Date();
-            
-            
-            const upcomingForecast = data.forecast.forecastday.filter(day => {
-                const forecastDate = new Date(day.date);
-                return forecastDate > currentDate;
-            });
-
-            
-            const allDays = [...upcomingForecast]; 
-            let additionalDaysNeeded = 7 - upcomingForecast.length;
-
-           
-            if (additionalDaysNeeded > 0) {
-                const remainingDays = data.forecast.forecastday.slice(0, additionalDaysNeeded);
-                allDays.push(...remainingDays);
-            }
-
-          
-            updateForecast(allDays.slice(0, 3), threeDayForecast); 
-            updateForecast(allDays, sevenDayForecast); 
-        })
-        .catch(() => {
-            
+            // Handle error for forecast fetch
         });
 }
-
 
 function updateForecast(forecastDays, container) {
     container.innerHTML = ""; 
     forecastDays.forEach(day => {
-        const date = new Date(day.date);
-        const dayName = dayOfTheWeek(date.getDate(), date.getMonth() + 1, date.getFullYear());
+        const forecastDate = new Date(day.date); // Convert forecast date to Date object
+        const dayName = dayOfTheWeek(forecastDate.getDate(), forecastDate.getMonth() + 1, forecastDate.getFullYear());
         const conditionText = day.day.condition.text;  
         const icon = day.day.condition.icon;
         const temp = `${day.day.maxtemp_c}&#176; / ${day.day.mintemp_c}&#176;`;
 
         container.innerHTML += `
             <li>
-                <span>${dayName}, ${date.getDate()} ${date.toLocaleString('default', { month: 'long' })}</span>
-                <span class="condition">${conditionText}</span> <!-- Added condition -->
+                <span>${dayName}, ${forecastDate.getDate()} ${forecastDate.toLocaleString('default', { month: 'long' })}</span>
+                <span class="condition">${conditionText}</span>
                 <img src="https:${icon}" alt="${conditionText}" />
                 <span>${temp}</span>
             </li>
         `;
     });
 }
-
 
 function updateMap(lat, lon) {
     if (!map) {
@@ -314,6 +221,13 @@ function updateMap(lat, lon) {
         .bindPopup(`<b>${cityInput}</b>`)
         .openPopup();
 }
+
+function dayOfTheWeek(day, month, year) {
+    const date = new Date(year, month - 1, day);
+    const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    return dayNames[date.getDay()];
+}
+
 document.getElementById('toggle-panel').addEventListener('click', () => {
     const weatherApp = document.querySelector('.weather-app');
     weatherApp.classList.toggle('full-view'); 
