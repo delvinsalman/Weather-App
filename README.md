@@ -72,6 +72,7 @@ Here’s a look at some of the app's key screens and UI elements.
 ![Overview 4](https://github.com/user-attachments/assets/a6889178-204b-4a90-85ce-50f76e5c9be6)  
 ![Overview 5](https://github.com/user-attachments/assets/e0469038-901e-44fb-975b-4fed50ac1663)  
 ![Overview 6](https://github.com/user-attachments/assets/469dafaf-d581-449d-95b0-3f3894fbda74)  
+<img width="1512" alt="Screenshot 2024-12-12 at 11 03 37 AM" src="https://github.com/user-attachments/assets/d8a95f05-eb07-41b5-9b3a-a0502e8e3005" />
 
 ---
 
