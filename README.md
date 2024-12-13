@@ -64,7 +64,7 @@ With a sleek, modern design, the app is simple to use, whether on desktop or mob
 ---
 
 ## 🔍 **Overview**  
-Here’s a look at some of the app's key screens and UI elements.  
+Here’s a look at some of the app's key screens and UI elements displayed.
 
 ![Overview 1](https://github.com/user-attachments/assets/98af54d9-71b0-4e8f-aff9-bc0af7709cf0)  
 ![Overview 2](https://github.com/user-attachments/assets/fe9d97bb-5f2f-4ff2-82d4-590e864db8c3)  
