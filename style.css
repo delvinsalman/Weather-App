@@ -259,21 +259,58 @@ h1, h3 {
 
 .panel ul.cities {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 1em 0;
     margin: 3em 0;
+    flex-wrap: wrap;
+    gap: 0.5em;
 }
 
 .panel ul.cities li {
     color: #ccc;
-    margin: 0.5em 0;
-    width: 30%;
+    margin: 0.3em 0;
+    width: calc(33.33% - 1em); 
     text-align: center;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 0.6em; 
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 0.9em; 
 }
 
 .panel ul.cities li:hover {
     color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: #ffffff;
+    transform: scale(1.05);
 }
+
+.panel ul.cities li.selected {
+    color: #fff;
+    background-color: #fa6d1b;
+    border-color: #fff;
+}
+
+@media screen and (max-width: 900px) {
+    .panel ul.cities li {
+        width: calc(33.33% - 0.8em); 
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .panel ul.cities li {
+        width: calc(50% - 0.8em); 
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .panel ul.cities li {
+        width: calc(100% - 0.8em); 
+    }
+}
+
 
 .panel ul.cities:first-of-type {
     margin-top: 5em;
