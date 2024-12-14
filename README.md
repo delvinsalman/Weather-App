@@ -65,14 +65,13 @@ With a sleek, modern design, the app is simple to use, whether on desktop or mob
 
 ## 🔍 **Overview**  
 Here’s a look at some of the app's key screens and UI elements displayed.
+<img width="1512" alt="Screenshot 2024-12-14 at 2 14 19 PM" src="https://github.com/user-attachments/assets/6b3192de-dc37-4b83-8cd0-36c5d73ca9b4" />
+<img width="1512" alt="Screenshot 2024-12-14 at 2 14 31 PM" src="https://github.com/user-attachments/assets/1df6896f-7e8f-4583-88c9-71e621c2134b" />
+<img width="1512" alt="Screenshot 2024-12-14 at 2 14 46 PM" src="https://github.com/user-attachments/assets/67dab2bb-e2b1-46c6-a97a-15ac6f5427db" />
+<img width="1512" alt="Screenshot 2024-12-14 at 2 14 52 PM" src="https://github.com/user-attachments/assets/5b290023-b77e-49b4-9c34-4253688c50c0" />
+<img width="1512" alt="Screenshot 2024-12-14 at 2 15 21 PM" src="https://github.com/user-attachments/assets/e1835883-0e3e-4d80-95cb-6b73b1add1cb" />
+<img width="1512" alt="Screenshot 2024-12-14 at 2 15 49 PM" src="https://github.com/user-attachments/assets/618bb69a-8181-46f1-824d-9961fa9c7a36" />
 
-![Overview 1](https://github.com/user-attachments/assets/98af54d9-71b0-4e8f-aff9-bc0af7709cf0)  
-![Overview 2](https://github.com/user-attachments/assets/fe9d97bb-5f2f-4ff2-82d4-590e864db8c3)  
-![Overview 3](https://github.com/user-attachments/assets/f9dff38b-1840-473a-8e18-aa1409208156)  
-![Overview 4](https://github.com/user-attachments/assets/a6889178-204b-4a90-85ce-50f76e5c9be6)  
-![Overview 5](https://github.com/user-attachments/assets/e0469038-901e-44fb-975b-4fed50ac1663)  
-![Overview 6](https://github.com/user-attachments/assets/469dafaf-d581-449d-95b0-3f3894fbda74)  
-<img width="1512" alt="Screenshot 2024-12-12 at 11 03 37 AM" src="https://github.com/user-attachments/assets/d8a95f05-eb07-41b5-9b3a-a0502e8e3005" />
 
 ---
 
