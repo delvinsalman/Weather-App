@@ -68,7 +68,7 @@ Here’s a look at some of the app's key screens and UI elements displayed.
 <img width="1512" alt="Screenshot 2024-12-14 at 2 14 19 PM" src="https://github.com/user-attachments/assets/6b3192de-dc37-4b83-8cd0-36c5d73ca9b4" />
 <img width="1512" alt="Screenshot 2024-12-14 at 2 14 31 PM" src="https://github.com/user-attachments/assets/1df6896f-7e8f-4583-88c9-71e621c2134b" />
 <img width="1512" alt="Screenshot 2024-12-14 at 2 19 54 PM" src="https://github.com/user-attachments/assets/3efa42bd-30c5-4e87-b7ec-34d898facbec" />
-<img width="1512" alt="Screenshot 2024-12-14 at 2 14 52 PM" src="https://github.com/user-attachments/assets/5b290023-b77e-49b4-9c34-4253688c50c0" />
+<img width="1512" alt="Screenshot 2024-12-14 at 2 20 38 PM" src="https://github.com/user-attachments/assets/c5281f5e-ba60-4af2-8e69-ada316038cbb" />
 <img width="1512" alt="Screenshot 2024-12-14 at 2 15 21 PM" src="https://github.com/user-attachments/assets/e1835883-0e3e-4d80-95cb-6b73b1add1cb" />
 <img width="1512" alt="Screenshot 2024-12-14 at 2 15 49 PM" src="https://github.com/user-attachments/assets/618bb69a-8181-46f1-824d-9961fa9c7a36" />
 <img width="1512" alt="Screenshot 2024-12-14 at 2 19 03 PM" src="https://github.com/user-attachments/assets/16b122fb-4b8f-4f5b-ba89-a9f226631c7f" />
