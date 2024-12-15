@@ -116,26 +116,15 @@ h1, h3 {
     color: #000;
 }
 
-
-.weather-app {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; 
-    padding: 0 20px;
-    text-align: center;
-}
-
-
 .search {
     background: transparent;
     border: 2px solid #ccc;
     padding: 0.8em 2em 0.8em 0.6em; 
-    width: 100%; 
+    width: 100%;
     min-width: 300px; 
     color: #fff;
     font-size: 1.2em;
-    border-radius: 12px; 
+    border-radius: 12px;
     transition: all 0.3s ease; 
     display: block; 
     box-sizing: border-box; 
@@ -162,7 +151,7 @@ h1, h3 {
     transform: translateY(-50%);
     font-size: 1.8em; 
     color: #ccc;
-    transition: all 0.3s ease; /
+    transition: all 0.3s ease; 
 }
 
 
@@ -179,8 +168,8 @@ h1, h3 {
 
 @media screen and (max-width: 600px) {
     .search {
-        width: 100%;
-        min-width: 200px;
+        width: 100%; 
+        min-width: 200px; 
     }
 }
 
