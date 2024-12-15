@@ -67,7 +67,7 @@ With a sleek, modern design, the app is simple to use, whether on desktop or mob
 Here’s a look at some of the app's key screens and UI elements displayed.
 <img width="1512" alt="Screenshot 2024-12-14 at 2 14 19 PM" src="https://github.com/user-attachments/assets/6b3192de-dc37-4b83-8cd0-36c5d73ca9b4" />
 <img width="1512" alt="Screenshot 2024-12-14 at 2 14 31 PM" src="https://github.com/user-attachments/assets/1df6896f-7e8f-4583-88c9-71e621c2134b" />
-<img width="1512" alt="Screenshot 2024-12-14 at 2 19 54 PM" src="https://github.com/user-attachments/assets/3efa42bd-30c5-4e87-b7ec-34d898facbec" />
+<img width="1512" alt="Screenshot 2024-12-14 at 7 02 29 PM" src="https://github.com/user-attachments/assets/9ce4f947-a0ba-4a4e-8672-ffed431ae851" />
 <img width="1512" alt="Screenshot 2024-12-14 at 2 20 38 PM" src="https://github.com/user-attachments/assets/c5281f5e-ba60-4af2-8e69-ada316038cbb" />
 <img width="1512" alt="Screenshot 2024-12-14 at 2 21 20 PM" src="https://github.com/user-attachments/assets/ccbd4829-bbe9-4b14-b87c-0220c787d09d" />
 <img width="1512" alt="Screenshot 2024-12-14 at 2 15 49 PM" src="https://github.com/user-attachments/assets/618bb69a-8181-46f1-824d-9961fa9c7a36" />
