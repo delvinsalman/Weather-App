@@ -25,9 +25,8 @@ With a sleek, modern design, the app is simple to use, whether on desktop or mob
 - **Temperature**: Current, high, and low for the day  
 - **Humidity & Cloud Cover**: Shows how clear or cloudy the weather is  
 - **"Feels Like" Temperature**: What the weather actually feels like based on wind chill, humidity, etc.  
-<img width="1512" alt="Screenshot 2024-12-15 at 9 32 16 AM" src="https://github.com/user-attachments/assets/bf26aeed-6c13-47be-96fd-ea5ed574e61e" />
-<img width="1512" alt="Screenshot 2024-12-15 at 9 32 33 AM" src="https://github.com/user-attachments/assets/3cdfe8eb-936d-43ce-bade-25c7ae5639ce" />
-<img width="1512" alt="Screenshot 2024-12-15 at 9 32 41 AM" src="https://github.com/user-attachments/assets/582ef553-bf21-4e56-ad42-559e88e49494" />
+<img width="603" alt="Screenshot 2024-12-15 at 9 33 08 AM" src="https://github.com/user-attachments/assets/610d8754-e561-4a37-bfa1-7f2c599958b9" />
+
 
 
 ---
