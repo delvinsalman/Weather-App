@@ -14,7 +14,7 @@
         <div class="container">
             <h3 class="brand">
                 Weather Search Application
-                <i id="weather-icon" class="fas fa-cloud-sun icon-right"></i>
+                🌍
                 <button id="toggle-panel" class="toggle-button">
                     <i class="fas fa-hand-pointer"></i>
                 </button>
@@ -45,9 +45,9 @@
                     <i class="fas fa-search"></i>
                 </button>
             </form>
-            <ul >
+            <ul>
             </ul>
-            <h2>Explore European Cities</h2>
+            <h2>European Cities</h2>
 
             <ul class="cities">
                 <li class="city">Berlin</li>  
@@ -59,10 +59,9 @@
                 <li class="city">Belgrade</li>  
                 <li class="city">Maastricht</li> 
                 <li class="city">Paris</li>  
- 
             </ul>
             
-            <h2>Explore North American Cities</h2>
+            <h2>North American Cities</h2>
 
             <ul class="cities">
                 <li class="city">Mexico City</li>  
@@ -75,7 +74,8 @@
                 <li class="city">Phoenix</li> 
                 <li class="city">Montreal</li>  
             </ul>
-            <h2>Explore South American Cities</h2>
+            
+            <h2>South American Cities</h2>
 
             <ul class="cities">
                 <li class="city">Medellín</li>  
@@ -118,24 +118,5 @@
 
     <script src="main.js"></script>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-
-    <script>
-        const icons = [
-            "fas fa-cloud-sun",
-            "fas fa-sun",
-            "fas fa-cloud",
-            "fas fa-cloud-rain",
-            "fas fa-snowflake",
-            "fas fa-cloud-showers-heavy"
-        ];
-    
-        let currentIconIndex = 0;
-    
-        setInterval(() => {
-            currentIconIndex = (currentIconIndex + 1) % icons.length;
-            document.getElementById('weather-icon').className = `fas ${icons[currentIconIndex]}`;
-        }, 5000);
-    </script>
-    
 </body>
 </html>

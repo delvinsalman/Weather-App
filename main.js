@@ -113,7 +113,7 @@ function fetchWeatherData() {
     const currentUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${cityInput}`;
     const forecastUrl = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${cityInput}&days=7`;
 
-    // Fetch current weather
+    
     fetch(currentUrl)
         .then(response => {
             if (!response.ok) {
@@ -122,7 +122,7 @@ function fetchWeatherData() {
             return response.json();
         })
         .then(data => {
-            const date = new Date(data.location.localtime); // Convert to Date object
+            const date = new Date(data.location.localtime); 
             const dayOfWeek = dayOfTheWeek(date.getDate(), date.getMonth() + 1, date.getFullYear());
             const formattedDate = `${dayOfWeek}, ${date.getDate()} ${date.toLocaleString('default', { month: 'long' })} ${date.getFullYear()}`;
             
@@ -154,7 +154,7 @@ function fetchWeatherData() {
             loading.style.display = "none"; 
         });
 
-    // Fetch forecast weather
+    
     fetch(forecastUrl)
         .then(response => {
             if (!response.ok) {
@@ -177,19 +177,19 @@ function fetchWeatherData() {
                 allDays.push(...remainingDays);
             }
 
-            // Update the 3-day and 7-day forecasts
+            
             updateForecast(allDays.slice(0, 3), threeDayForecast); 
             updateForecast(allDays, sevenDayForecast); 
         })
         .catch(() => {
-            // Handle error for forecast fetch
+            
         });
 }
 
 function updateForecast(forecastDays, container) {
     container.innerHTML = ""; 
     forecastDays.forEach(day => {
-        const forecastDate = new Date(day.date); // Convert forecast date to Date object
+        const forecastDate = new Date(day.date); 
         const dayName = dayOfTheWeek(forecastDate.getDate(), forecastDate.getMonth() + 1, forecastDate.getFullYear());
         const conditionText = day.day.condition.text;  
         const icon = day.day.condition.icon;
