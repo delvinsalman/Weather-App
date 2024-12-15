@@ -27,10 +27,8 @@ With a sleek, modern design, the app is simple to use, whether on desktop or mob
 - **"Feels Like" Temperature**: What the weather actually feels like based on wind chill, humidity, etc.  
 
 <p align="center">
-  <img src="<img width="603" alt="Screenshot 2024-12-15 at 9 34 59 AM" src="https://github.com/user-attachments/assets/4c3215b6-9180-4317-8941-3c789e56df4a" />
-" alt="Image 1" width="45%">
-  <img src="<img width="603" alt="Screenshot 2024-12-15 at 9 35 35 AM" src="https://github.com/user-attachments/assets/77aa4410-6bd3-473c-bf11-8dfca74dab49" />
-" alt="Image 2" width="45%">
+  <img src="Screenshot 2024-12-15 at 9.36.05 AM.png" alt="Weather Details 1" width="45%">
+  <img src="Screenshot 2024-12-15 at 9.36.20 AM.png" alt="Weather Details 2" width="45%">
 </p>
 
 
