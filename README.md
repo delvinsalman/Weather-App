@@ -64,14 +64,15 @@ With a sleek, modern design, the app is simple to use, whether on desktop or mob
 
 ## 🔍 **Overview**  
 Here’s a look at some of the app's key screens and UI elements displayed.
-<img width="1512" alt="Screenshot 2024-12-15 at 10 03 30 AM" src="https://github.com/user-attachments/assets/cb412cbe-f0d4-46af-9b4a-abe8c2a6b7c7" />
-<img width="1512" alt="Screenshot 2024-12-15 at 10 04 04 AM" src="https://github.com/user-attachments/assets/916f2ffc-e157-4dc1-b09c-dfefbbcdbd41" />
-<img width="1512" alt="Screenshot 2024-12-15 at 10 04 31 AM" src="https://github.com/user-attachments/assets/60d7b022-f5a7-40a0-ab78-88e46fee08be" />
-<img width="1512" alt="Screenshot 2024-12-15 at 10 04 58 AM" src="https://github.com/user-attachments/assets/e0fb1277-0625-47a9-ae2a-cb0baa5a6d37" />
-<img width="1512" alt="Screenshot 2024-12-15 at 10 05 19 AM" src="https://github.com/user-attachments/assets/868d44a7-5e34-41e1-8965-72c58149b15e" />
-<img width="1512" alt="Screenshot 2024-12-15 at 10 05 30 AM" src="https://github.com/user-attachments/assets/33743bdd-50e7-4536-bee8-eff568a4337a" />
-<img width="1512" alt="Screenshot 2024-12-15 at 10 06 00 AM" src="https://github.com/user-attachments/assets/4064fc45-ab33-48f7-86e8-f11cb1ba1692" />
-<img width="1512" alt="Screenshot 2024-12-15 at 10 07 17 AM" src="https://github.com/user-attachments/assets/e944c79f-527a-48df-b1b5-0fbee1fe420e" />
+<img width="1512" alt="Screenshot 2024-12-15 at 1 18 42 PM" src="https://github.com/user-attachments/assets/aa79e442-aea6-4ba1-ba7f-576d548e266f" />
+<img width="1512" alt="Screenshot 2024-12-15 at 1 19 20 PM" src="https://github.com/user-attachments/assets/7795c8f1-7879-4e39-900b-7392005624b5" />
+<img width="1512" alt="Screenshot 2024-12-15 at 1 19 40 PM" src="https://github.com/user-attachments/assets/e3f42fad-6257-488e-9ce6-a8cecd19291f" />
+<img width="1512" alt="Screenshot 2024-12-15 at 1 20 03 PM" src="https://github.com/user-attachments/assets/ad95c9ee-9116-4aa5-80b1-6df39cc9f045" />
+<img width="1512" alt="Screenshot 2024-12-15 at 1 20 25 PM" src="https://github.com/user-attachments/assets/af37c8b3-e283-4f7f-a575-fe6ef0e2e847" />
+<img width="1512" alt="Screenshot 2024-12-15 at 1 20 51 PM" src="https://github.com/user-attachments/assets/3350d7ab-388e-495b-8943-e7b5b759e2b1" />
+<img width="1512" alt="Screenshot 2024-12-15 at 1 21 21 PM" src="https://github.com/user-attachments/assets/00b74d72-6ebe-421a-9633-ef5385aeb817" />
+<img width="1512" alt="Screenshot 2024-12-15 at 1 21 41 PM" src="https://github.com/user-attachments/assets/cac61572-afc9-4f46-bdc7-a9bdf268a991" />
+
 
 
 ---
