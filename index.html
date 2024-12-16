@@ -47,47 +47,91 @@
             </form>
             <ul>
             </ul>
-            <h2>European Cities</h2>
-
+            <h2>World Cities Suggestions 
+                <button id="resetButton" onclick="resetCities()" class="reset-btn">🔄</button>
+            </h2>
+            
             <ul class="cities">
-                <li class="city">Berlin</li>  
-                <li class="city">Plovdiv</li> 
-                <li class="city">Kópavogur</li> 
-                <li class="city">Helsinki</li>  
-                <li class="city">Lisbon</li> 
-                <li class="city">Barcelona</li> 
-                <li class="city">Belgrade</li>  
-                <li class="city">Maastricht</li> 
-                <li class="city">Paris</li>  
+                <li class="city">Berlin 🇩🇪</li>
+                <li class="city">Plovdiv 🇧🇬</li>
+                <li class="city">Kópavogur 🇮🇸</li>
+                <li class="city">Helsinki 🇫🇮</li>
+                <li class="city">Lisbon 🇵🇹</li>
+                <li class="city">Barcelona 🇪🇸</li>
+                <li class="city">Belgrade 🇷🇸</li>
+                <li class="city">Maastricht 🇳🇱</li>
+                <li class="city">Paris 🇫🇷</li>
+                <li class="city">Mexico 🇲🇽</li>
+                <li class="city">Chicago 🇺🇸</li>
+                <li class="city">Phoenix 🇺🇸</li>
+                <li class="city">Montreal 🇨🇦</li>
+                <li class="city">Medellín 🇨🇴</li>
+                <li class="city">Salvador 🇧🇷</li>
+                <li class="city">Curitiba 🇧🇷</li>
+                <li class="city">Córdoba 🇦🇷</li>
+                <li class="city">Mendoza 🇦🇷</li>
+                <li class="city">Paramaribo 🇸🇷</li>
+                <li class="city">Valparaíso 🇨🇱</li>
+                <li class="city">Accra 🇬🇭</li>
+                <li class="city">Lusaka 🇿🇲</li>
+                <li class="city">Banjul 🇬🇲</li>
+                <li class="city">Suva 🇫🇯</li>
+                <li class="city">Wellington 🇳🇿</li>
             </ul>
             
-            <h2>North American Cities</h2>
-
-            <ul class="cities">
-                <li class="city">Mexico City</li>  
-                <li class="city">Vancouver</li> 
-                <li class="city">Calgary</li>  
-                <li class="city">Edmonton</li>  
-                <li class="city">Erie</li>
-                <li class="city">Los Angeles</li>  
-                <li class="city">Chicago</li>  
-                <li class="city">Phoenix</li> 
-                <li class="city">Montreal</li>  
-            </ul>
+            <script>
+                let resetCount = 0;
             
-            <h2>South American Cities</h2>
-
-            <ul class="cities">
-                <li class="city">Medellín</li>  
-                <li class="city">Salvador</li> 
-                <li class="city">Curitiba</li>  
-                <li class="city">Córdoba</li>  
-                <li class="city">Mendoza</li>
-                <li class="city">Paramaribo</li>  
-                <li class="city">Valparaíso</li>  
-                <li class="city">Recife</li> 
-                <li class="city">Cali</li>  
-            </ul>
+                const originalCities = [
+                    'Berlin 🇩🇪', 'Plovdiv 🇧🇬', 'Kópavogur 🇮🇸', 'Helsinki 🇫🇮', 'Lisbon 🇵🇹',
+                    'Barcelona 🇪🇸', 'Belgrade 🇷🇸', 'Maastricht 🇳🇱', 'Paris 🇫🇷', 'Mexico 🇲🇽',
+                    'Chicago 🇺🇸', 'Phoenix 🇺🇸', 'Montreal 🇨🇦', 'Medellín 🇨🇴', 'Salvador 🇧🇷',
+                    'Curitiba 🇧🇷', 'Córdoba 🇦🇷', 'Mendoza 🇦🇷', 'Paramaribo 🇸🇷', 'Valparaíso 🇨🇱',
+                    'Accra 🇬🇭', 'Lusaka 🇿🇲', 'Banjul 🇬🇲', 'Suva 🇫🇯', 'Wellington 🇳🇿'
+                ];
+            
+                const alternateCities = [
+                    'Tokyo 🇯🇵', 'Sydney 🇦🇺', 'New York 🇺🇸', 'Cairo 🇪🇬', 'Rome 🇮🇹',
+                    'Rosario 🇦🇷', 'Moscow 🇷🇺', 'Singapore 🇸🇬', 'Cape Town 🇿🇦', 'Lagos 🇳🇬',
+                    'Dubai 🇦🇪', 'London 🇬🇧', 'Toronto 🇨🇦', 'Rio 🇧🇷', 'Berlin 🇩🇪',
+                    'Barcelona 🇪🇸', 'Athens 🇬🇷', 'Mexico 🇲🇽', 'Lagos 🇳🇬', 'Paris 🇫🇷',
+                    'Seoul 🇰🇷', 'Shanghai 🇨🇳', 'Jakarta 🇮🇩', 'Sao Paulo 🇧🇷', 'San Fran 🇺🇸'
+                ];
+            
+                function resetCities() {
+                    const cityElements = document.querySelectorAll('.city');
+            
+                    if (resetCount < 3) {
+                        const citiesToUse = resetCount % 2 === 0 ? alternateCities : originalCities;
+                        cityElements.forEach((city, index) => {
+                            city.textContent = citiesToUse[index % citiesToUse.length];
+                        });
+                        resetCount++;
+                    } else {
+                        cityElements.forEach((city, index) => {
+                            city.textContent = originalCities[index % originalCities.length];
+                        });
+                        resetCount = 0;
+                    }
+                }
+            </script>
+            
+            <style>
+                .reset-btn {
+                    background: none;
+                    border: none;
+                    font-size: 17px;
+                    cursor: pointer;
+                    padding: 0;
+                    line-height: 0;
+                    display: inline;
+                }
+            
+                .reset-btn:hover {
+                    opacity: 0.8;
+                }
+            </style>
+            
             
             <ul class="details">
                 <h2>Live Weather Details</h2>
