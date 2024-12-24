@@ -109,7 +109,7 @@ function updateBackground(code, isDay) {
 }
 
 function fetchWeatherData() {
-    const apiKey = "b16198901ec74a6b84d183025241012";
+    const apiKey = "dec9c9e5a850467da9c143551242412";
     const currentUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${cityInput}`;
     const forecastUrl = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${cityInput}&days=7`;
 
